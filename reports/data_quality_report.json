@@ -1,0 +1,436 @@
+{
+  "timestamp": "2026-01-09T12:41:31.469275",
+  "profile": {
+    "metadata": {
+      "total_rows": 1020,
+      "total_columns": 13,
+      "duplicate_rows": "0",
+      "memory_usage": 0.3725442886352539,
+      "constant_columns": [
+        "Company"
+      ]
+    },
+    "data_types": {
+      "numeric": [
+        "EmployeeID",
+        "Age",
+        "Salary",
+        "YearsAtCompany",
+        "PerformanceScore",
+        "Satisfaction",
+        "ProjectCount"
+      ],
+      "categorical": [
+        "Name",
+        "Department",
+        "RemoteWork",
+        "EmployeeCode",
+        "Company",
+        "ManagerEmail"
+      ],
+      "datetime": [],
+      "boolean": []
+    },
+    "columns": {
+      "EmployeeID": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1000,
+        "is_constant": false,
+        "mean": 500.65098039215684,
+        "std": 288.71570334707275,
+        "min": 1.0,
+        "max": 1000.0,
+        "median": 501.5
+      },
+      "Name": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1000,
+        "is_constant": false
+      },
+      "Age": {
+        "dtype": "float64",
+        "missing_count": 151,
+        "missing_percentage": 14.803921568627452,
+        "unique_count": 56,
+        "is_constant": false,
+        "mean": 43.982738780207136,
+        "std": 16.092715996954777,
+        "min": 15.0,
+        "max": 80.0,
+        "median": 44.0
+      },
+      "Department": {
+        "dtype": "object",
+        "missing_count": 136,
+        "missing_percentage": 13.333333333333334,
+        "unique_count": 12,
+        "is_constant": false
+      },
+      "Salary": {
+        "dtype": "float64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 953,
+        "is_constant": false,
+        "mean": 70024.13865982136,
+        "std": 63996.16919134695,
+        "min": 2234.5758961455067,
+        "max": 500000.0,
+        "median": 60661.832625330106
+      },
+      "YearsAtCompany": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 34,
+        "is_constant": false,
+        "mean": 14.534313725490197,
+        "std": 8.979630149663059,
+        "min": -5.0,
+        "max": 29.0,
+        "median": 15.0
+      },
+      "PerformanceScore": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5,
+        "is_constant": false,
+        "mean": 3.0676470588235296,
+        "std": 1.4157159224410687,
+        "min": 1.0,
+        "max": 5.0,
+        "median": 3.0
+      },
+      "Satisfaction": {
+        "dtype": "float64",
+        "missing_count": 253,
+        "missing_percentage": 24.80392156862745,
+        "unique_count": 750,
+        "is_constant": false,
+        "mean": 5.446023555155738,
+        "std": 2.611507122098489,
+        "min": 1.001678753535968,
+        "max": 9.972182967304198,
+        "median": 5.450690126083671
+      },
+      "ProjectCount": {
+        "dtype": "float64",
+        "missing_count": 74,
+        "missing_percentage": 7.254901960784315,
+        "unique_count": 14,
+        "is_constant": false,
+        "mean": 3.693446088794926,
+        "std": 8.195307688665833,
+        "min": -5.0,
+        "max": 100.0,
+        "median": 3.0
+      },
+      "RemoteWork": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 2,
+        "is_constant": false
+      },
+      "EmployeeCode": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 971,
+        "is_constant": false
+      },
+      "Company": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1,
+        "is_constant": true
+      },
+      "ManagerEmail": {
+        "dtype": "object",
+        "missing_count": 612,
+        "missing_percentage": 60.0,
+        "unique_count": 408,
+        "is_constant": false
+      }
+    }
+  },
+  "missing_analysis": {
+    "overall_stats": {
+      "missing_percentage": 9.245852187028659,
+      "complete_rows_percentage": 22.84313725490196
+    },
+    "column_analysis": [
+      {
+        "column": "EmployeeID",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Name",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Age",
+        "missing_count": 151,
+        "missing_percentage": 14.803921568627452,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "Department",
+        "missing_count": 136,
+        "missing_percentage": 13.333333333333334,
+        "severity": "warning",
+        "dtype": "object",
+        "strategies": [
+          "Impute with mode",
+          "Fill with 'Unknown'",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "Salary",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "float64",
+        "strategies": []
+      },
+      {
+        "column": "YearsAtCompany",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "PerformanceScore",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Satisfaction",
+        "missing_count": 253,
+        "missing_percentage": 24.80392156862745,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "ProjectCount",
+        "missing_count": 74,
+        "missing_percentage": 7.254901960784315,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "RemoteWork",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "EmployeeCode",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Company",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "ManagerEmail",
+        "missing_count": 612,
+        "missing_percentage": 60.0,
+        "severity": "error",
+        "dtype": "object",
+        "strategies": [
+          "Impute with mode",
+          "Fill with 'Unknown'",
+          "Drop rows if target variable"
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "column": "Age",
+        "missing_count": 151,
+        "missing_percentage": 14.803921568627452,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "Department",
+        "missing_count": 136,
+        "missing_percentage": 13.333333333333334,
+        "severity": "warning",
+        "dtype": "object",
+        "strategies": [
+          "Impute with mode",
+          "Fill with 'Unknown'",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "Satisfaction",
+        "missing_count": 253,
+        "missing_percentage": 24.80392156862745,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "ProjectCount",
+        "missing_count": 74,
+        "missing_percentage": 7.254901960784315,
+        "severity": "warning",
+        "dtype": "float64",
+        "strategies": [
+          "Impute with mean/median",
+          "Fill with constant (0)",
+          "Drop rows if target variable"
+        ]
+      },
+      {
+        "column": "ManagerEmail",
+        "missing_count": 612,
+        "missing_percentage": 60.0,
+        "severity": "error",
+        "dtype": "object",
+        "strategies": [
+          "Impute with mode",
+          "Fill with 'Unknown'",
+          "Drop rows if target variable"
+        ]
+      }
+    ]
+  },
+  "outlier_detection": {
+    "summary": {
+      "per_column_summary": {
+        "EmployeeID": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Age": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Salary": {
+          "iqr_outliers": 37,
+          "zscore_outliers": 16,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "YearsAtCompany": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "PerformanceScore": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Satisfaction": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "ProjectCount": {
+          "iqr_outliers": 23,
+          "zscore_outliers": 8,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        }
+      },
+      "total_ml_outliers": 102
+    }
+  },
+  "validation": {
+    "summary": {
+      "data_quality_score": 92.66214177978884,
+      "validation_passed": true,
+      "total_issues": 2,
+      "severity_breakdown": {
+        "error": 2,
+        "warning": 0
+      }
+    },
+    "constraint_violations": [
+      {
+        "column": "Age",
+        "constraint": "min_value",
+        "violations": 16,
+        "percentage": 1.5686274509803921,
+        "expected": ">= 18",
+        "severity": "error"
+      },
+      {
+        "column": "Age",
+        "constraint": "max_value",
+        "violations": 15,
+        "percentage": 1.4705882352941175,
+        "expected": "<= 70",
+        "severity": "error"
+      }
+    ],
+    "categorical_consistency": []
+  }
+}

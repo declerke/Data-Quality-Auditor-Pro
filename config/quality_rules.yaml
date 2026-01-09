@@ -1,0 +1,66 @@
+# quality_rules.yaml - Configurable Data Quality Rules
+
+# Outlier detection configuration
+outlier_detection:
+  methods:
+    - iqr  # Interquartile Range
+    - zscore  # Z-score (standard deviations)
+    - isolation_forest  # ML-based anomaly detection
+  
+  iqr_multiplier: 1.5  # Standard IQR multiplier
+  zscore_threshold: 3  # Number of standard deviations
+  isolation_contamination: 0.1  # Expected proportion of outliers
+
+# Missing value thresholds
+missing_values:
+  warning_threshold: 0.05  # Warn if >5% missing
+  critical_threshold: 0.30  # Critical if >30% missing
+  
+# Data type expectations (optional - can be auto-detected)
+expected_types:
+  numeric_columns:
+    - Age
+    - DailyRate
+    - DistanceFromHome
+    - HourlyRate
+    - MonthlyIncome
+    - MonthlyRate
+    - NumCompaniesWorked
+    - PercentSalaryHike
+    - TotalWorkingYears
+    - YearsAtCompany
+    - YearsInCurrentRole
+    - YearsSinceLastPromotion
+    - YearsWithCurrManager
+  
+  categorical_columns:
+    - Attrition
+    - BusinessTravel
+    - Department
+    - EducationField
+    - Gender
+    - JobRole
+    - MaritalStatus
+    - OverTime
+
+# Business rules and constraints
+constraints:
+  Age:
+    min: 18
+    max: 70
+  MonthlyIncome:
+    min: 1000
+    max: 25000
+  PercentSalaryHike:
+    min: 0
+    max: 30
+  YearsAtCompany:
+    relationship: "YearsAtCompany <= TotalWorkingYears"
+
+# Reporting preferences
+reporting:
+  generate_html: true
+  generate_json: true
+  generate_csv: true
+  include_visualizations: true
+  max_outliers_to_display: 50
