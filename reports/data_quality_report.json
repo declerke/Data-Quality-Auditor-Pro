@@ -1,173 +1,918 @@
 {
-  "timestamp": "2026-01-09T12:41:31.469275",
+  "timestamp": "2026-01-09T19:27:37.503121",
   "profile": {
     "metadata": {
-      "total_rows": 1020,
-      "total_columns": 13,
+      "total_rows": 18979,
+      "total_columns": 77,
       "duplicate_rows": "0",
-      "memory_usage": 0.3725442886352539,
-      "constant_columns": [
-        "Company"
-      ]
+      "memory_usage": 35.392311096191406,
+      "constant_columns": []
     },
     "data_types": {
       "numeric": [
-        "EmployeeID",
+        "ID",
         "Age",
-        "Salary",
-        "YearsAtCompany",
-        "PerformanceScore",
-        "Satisfaction",
-        "ProjectCount"
+        "\u2193OVA",
+        "POT",
+        "BOV",
+        "Attacking",
+        "Crossing",
+        "Finishing",
+        "Heading Accuracy",
+        "Short Passing",
+        "Volleys",
+        "Skill",
+        "Dribbling",
+        "Curve",
+        "FK Accuracy",
+        "Long Passing",
+        "Ball Control",
+        "Movement",
+        "Acceleration",
+        "Sprint Speed",
+        "Agility",
+        "Reactions",
+        "Balance",
+        "Power",
+        "Shot Power",
+        "Jumping",
+        "Stamina",
+        "Strength",
+        "Long Shots",
+        "Mentality",
+        "Aggression",
+        "Interceptions",
+        "Positioning",
+        "Vision",
+        "Penalties",
+        "Composure",
+        "Defending",
+        "Marking",
+        "Standing Tackle",
+        "Sliding Tackle",
+        "Goalkeeping",
+        "GK Diving",
+        "GK Handling",
+        "GK Kicking",
+        "GK Positioning",
+        "GK Reflexes",
+        "Total Stats",
+        "Base Stats",
+        "PAC",
+        "SHO",
+        "PAS",
+        "DRI",
+        "DEF",
+        "PHY"
       ],
       "categorical": [
         "Name",
-        "Department",
-        "RemoteWork",
-        "EmployeeCode",
-        "Company",
-        "ManagerEmail"
+        "LongName",
+        "photoUrl",
+        "playerUrl",
+        "Nationality",
+        "Club",
+        "Contract",
+        "Positions",
+        "Height",
+        "Weight",
+        "Preferred Foot",
+        "Best Position",
+        "Joined",
+        "Loan Date End",
+        "Value",
+        "Wage",
+        "Release Clause",
+        "W/F",
+        "SM",
+        "A/W",
+        "D/W",
+        "IR",
+        "Hits"
       ],
       "datetime": [],
       "boolean": []
     },
     "columns": {
-      "EmployeeID": {
+      "ID": {
         "dtype": "int64",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 1000,
+        "unique_count": 18979,
         "is_constant": false,
-        "mean": 500.65098039215684,
-        "std": 288.71570334707275,
-        "min": 1.0,
-        "max": 1000.0,
-        "median": 501.5
+        "mean": 226403.38479371936,
+        "std": 27141.054157014067,
+        "min": 41.0,
+        "max": 259216.0,
+        "median": 232418.0
       },
       "Name": {
         "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 1000,
+        "unique_count": 17920,
+        "is_constant": false
+      },
+      "LongName": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 18852,
+        "is_constant": false
+      },
+      "photoUrl": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 18979,
+        "is_constant": false
+      },
+      "playerUrl": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 18979,
+        "is_constant": false
+      },
+      "Nationality": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 164,
         "is_constant": false
       },
       "Age": {
-        "dtype": "float64",
-        "missing_count": 151,
-        "missing_percentage": 14.803921568627452,
-        "unique_count": 56,
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 29,
         "is_constant": false,
-        "mean": 43.982738780207136,
-        "std": 16.092715996954777,
-        "min": 15.0,
-        "max": 80.0,
-        "median": 44.0
+        "mean": 25.194109278676432,
+        "std": 4.710520473456671,
+        "min": 16.0,
+        "max": 53.0,
+        "median": 25.0
       },
-      "Department": {
+      "\u2193OVA": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 47,
+        "is_constant": false,
+        "mean": 65.71863638758629,
+        "std": 6.968998988533957,
+        "min": 47.0,
+        "max": 93.0,
+        "median": 66.0
+      },
+      "POT": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 48,
+        "is_constant": false,
+        "mean": 71.1364139311871,
+        "std": 6.114634632021361,
+        "min": 47.0,
+        "max": 95.0,
+        "median": 71.0
+      },
+      "Club": {
         "dtype": "object",
-        "missing_count": 136,
-        "missing_percentage": 13.333333333333334,
-        "unique_count": 12,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 682,
         "is_constant": false
       },
-      "Salary": {
-        "dtype": "float64",
+      "Contract": {
+        "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 953,
-        "is_constant": false,
-        "mean": 70024.13865982136,
-        "std": 63996.16919134695,
-        "min": 2234.5758961455067,
-        "max": 500000.0,
-        "median": 60661.832625330106
+        "unique_count": 131,
+        "is_constant": false
       },
-      "YearsAtCompany": {
-        "dtype": "int64",
+      "Positions": {
+        "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 34,
-        "is_constant": false,
-        "mean": 14.534313725490197,
-        "std": 8.979630149663059,
-        "min": -5.0,
-        "max": 29.0,
-        "median": 15.0
+        "unique_count": 640,
+        "is_constant": false
       },
-      "PerformanceScore": {
-        "dtype": "int64",
+      "Height": {
+        "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 5,
-        "is_constant": false,
-        "mean": 3.0676470588235296,
-        "std": 1.4157159224410687,
-        "min": 1.0,
-        "max": 5.0,
-        "median": 3.0
+        "unique_count": 62,
+        "is_constant": false
       },
-      "Satisfaction": {
-        "dtype": "float64",
-        "missing_count": 253,
-        "missing_percentage": 24.80392156862745,
-        "unique_count": 750,
-        "is_constant": false,
-        "mean": 5.446023555155738,
-        "std": 2.611507122098489,
-        "min": 1.001678753535968,
-        "max": 9.972182967304198,
-        "median": 5.450690126083671
+      "Weight": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 79,
+        "is_constant": false
       },
-      "ProjectCount": {
-        "dtype": "float64",
-        "missing_count": 74,
-        "missing_percentage": 7.254901960784315,
-        "unique_count": 14,
-        "is_constant": false,
-        "mean": 3.693446088794926,
-        "std": 8.195307688665833,
-        "min": -5.0,
-        "max": 100.0,
-        "median": 3.0
-      },
-      "RemoteWork": {
+      "Preferred Foot": {
         "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
         "unique_count": 2,
         "is_constant": false
       },
-      "EmployeeCode": {
+      "BOV": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 46,
+        "is_constant": false,
+        "mean": 66.75172559144318,
+        "std": 6.747193071361755,
+        "min": 48.0,
+        "max": 93.0,
+        "median": 67.0
+      },
+      "Best Position": {
         "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 971,
+        "unique_count": 15,
         "is_constant": false
       },
-      "Company": {
+      "Joined": {
         "dtype": "object",
         "missing_count": 0,
         "missing_percentage": 0.0,
-        "unique_count": 1,
-        "is_constant": true
+        "unique_count": 1869,
+        "is_constant": false
       },
-      "ManagerEmail": {
+      "Loan Date End": {
         "dtype": "object",
-        "missing_count": 612,
-        "missing_percentage": 60.0,
-        "unique_count": 408,
+        "missing_count": 17966,
+        "missing_percentage": 94.6625217345487,
+        "unique_count": 24,
+        "is_constant": false
+      },
+      "Value": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 255,
+        "is_constant": false
+      },
+      "Wage": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 134,
+        "is_constant": false
+      },
+      "Release Clause": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1216,
+        "is_constant": false
+      },
+      "Attacking": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 367,
+        "is_constant": false,
+        "mean": 248.93814215712104,
+        "std": 74.29942844945097,
+        "min": 42.0,
+        "max": 437.0,
+        "median": 263.0
+      },
+      "Crossing": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 89,
+        "is_constant": false,
+        "mean": 49.68839243374256,
+        "std": 18.13115290028102,
+        "min": 6.0,
+        "max": 94.0,
+        "median": 54.0
+      },
+      "Finishing": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 93,
+        "is_constant": false,
+        "mean": 45.84240476315928,
+        "std": 19.56708136191622,
+        "min": 3.0,
+        "max": 95.0,
+        "median": 49.0
+      },
+      "Heading Accuracy": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 89,
+        "is_constant": false,
+        "mean": 51.94272617103114,
+        "std": 17.29440869172497,
+        "min": 5.0,
+        "max": 93.0,
+        "median": 55.0
+      },
+      "Short Passing": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 86,
+        "is_constant": false,
+        "mean": 58.76811212392644,
+        "std": 14.519105668601945,
+        "min": 7.0,
+        "max": 94.0,
+        "median": 62.0
+      },
+      "Volleys": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 88,
+        "is_constant": false,
+        "mean": 42.6965066652616,
+        "std": 17.64693650838848,
+        "min": 3.0,
+        "max": 90.0,
+        "median": 44.0
+      },
+      "Skill": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 393,
+        "is_constant": false,
+        "mean": 256.47921386795934,
+        "std": 78.65060133803952,
+        "min": 40.0,
+        "max": 470.0,
+        "median": 269.0
+      },
+      "Dribbling": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 91,
+        "is_constant": false,
+        "mean": 55.58749143790505,
+        "std": 18.761314035399554,
+        "min": 5.0,
+        "max": 96.0,
+        "median": 61.0
+      },
+      "Curve": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 91,
+        "is_constant": false,
+        "mean": 47.246957163180355,
+        "std": 18.207790454851178,
+        "min": 4.0,
+        "max": 94.0,
+        "median": 49.0
+      },
+      "FK Accuracy": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 90,
+        "is_constant": false,
+        "mean": 42.391011117550974,
+        "std": 17.227946931347176,
+        "min": 5.0,
+        "max": 94.0,
+        "median": 41.0
+      },
+      "Long Passing": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 86,
+        "is_constant": false,
+        "mean": 52.7253806839138,
+        "std": 15.178150781667917,
+        "min": 5.0,
+        "max": 93.0,
+        "median": 56.0
+      },
+      "Ball Control": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 91,
+        "is_constant": false,
+        "mean": 58.52837346540914,
+        "std": 16.5658922014105,
+        "min": 5.0,
+        "max": 96.0,
+        "median": 63.0
+      },
+      "Movement": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 331,
+        "is_constant": false,
+        "mean": 317.71868907740134,
+        "std": 55.879045772107816,
+        "min": 122.0,
+        "max": 464.0,
+        "median": 327.0
+      },
+      "Acceleration": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 85,
+        "is_constant": false,
+        "mean": 64.35755308498867,
+        "std": 14.889981263800141,
+        "min": 13.0,
+        "max": 97.0,
+        "median": 67.0
+      },
+      "Sprint Speed": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 84,
+        "is_constant": false,
+        "mean": 64.41293008061541,
+        "std": 14.638743310824662,
+        "min": 12.0,
+        "max": 96.0,
+        "median": 67.0
+      },
+      "Agility": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 81,
+        "is_constant": false,
+        "mean": 63.3667211128089,
+        "std": 14.596277012185084,
+        "min": 14.0,
+        "max": 96.0,
+        "median": 66.0
+      },
+      "Reactions": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 69,
+        "is_constant": false,
+        "mean": 61.655619368776016,
+        "std": 9.072114010445553,
+        "min": 24.0,
+        "max": 95.0,
+        "median": 62.0
+      },
+      "Balance": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 82,
+        "is_constant": false,
+        "mean": 63.92586543021234,
+        "std": 14.062284656325323,
+        "min": 12.0,
+        "max": 97.0,
+        "median": 66.0
+      },
+      "Power": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 288,
+        "is_constant": false,
+        "mean": 296.6051952157648,
+        "std": 50.73238962573419,
+        "min": 122.0,
+        "max": 444.0,
+        "median": 302.0
+      },
+      "Shot Power": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 76,
+        "is_constant": false,
+        "mean": 57.80167553611887,
+        "std": 13.308747038910274,
+        "min": 18.0,
+        "max": 95.0,
+        "median": 59.0
+      },
+      "Jumping": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 75,
+        "is_constant": false,
+        "mean": 64.57737499341377,
+        "std": 11.84486952088594,
+        "min": 15.0,
+        "max": 95.0,
+        "median": 65.0
+      },
+      "Stamina": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 85,
+        "is_constant": false,
+        "mean": 62.65398598450919,
+        "std": 15.804222856870087,
+        "min": 12.0,
+        "max": 97.0,
+        "median": 66.0
+      },
+      "Strength": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 77,
+        "is_constant": false,
+        "mean": 64.78692238790242,
+        "std": 12.488671891168524,
+        "min": 16.0,
+        "max": 97.0,
+        "median": 66.0
+      },
+      "Long Shots": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 91,
+        "is_constant": false,
+        "mean": 46.78523631382054,
+        "std": 19.30053429440999,
+        "min": 4.0,
+        "max": 94.0,
+        "median": 51.0
+      },
+      "Mentality": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 351,
+        "is_constant": false,
+        "mean": 254.1997470888877,
+        "std": 64.59561285787167,
+        "min": 50.0,
+        "max": 421.0,
+        "median": 263.0
+      },
+      "Aggression": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 88,
+        "is_constant": false,
+        "mean": 55.59128510458928,
+        "std": 17.14041401882283,
+        "min": 9.0,
+        "max": 96.0,
+        "median": 58.0
+      },
+      "Interceptions": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 89,
+        "is_constant": false,
+        "mean": 46.39448864534486,
+        "std": 20.69807834119505,
+        "min": 3.0,
+        "max": 91.0,
+        "median": 53.0
+      },
+      "Positioning": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 94,
+        "is_constant": false,
+        "mean": 50.29896201064334,
+        "std": 19.42870113349913,
+        "min": 2.0,
+        "max": 95.0,
+        "median": 55.0
+      },
+      "Vision": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 86,
+        "is_constant": false,
+        "mean": 53.85710522156067,
+        "std": 13.708573612220063,
+        "min": 9.0,
+        "max": 95.0,
+        "median": 55.0
+      },
+      "Penalties": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 87,
+        "is_constant": false,
+        "mean": 48.05790610674956,
+        "std": 15.65599899801393,
+        "min": 6.0,
+        "max": 92.0,
+        "median": 49.0
+      },
+      "Composure": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 85,
+        "is_constant": false,
+        "mean": 58.073660361452134,
+        "std": 12.079109697103055,
+        "min": 12.0,
+        "max": 96.0,
+        "median": 59.0
+      },
+      "Defending": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 247,
+        "is_constant": false,
+        "mean": 139.90926813846883,
+        "std": 61.21947225608917,
+        "min": 20.0,
+        "max": 272.0,
+        "median": 159.0
+      },
+      "Marking": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 92,
+        "is_constant": false,
+        "mean": 46.55919700721851,
+        "std": 20.13932429037593,
+        "min": 3.0,
+        "max": 94.0,
+        "median": 52.0
+      },
+      "Standing Tackle": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 87,
+        "is_constant": false,
+        "mean": 47.70562200326677,
+        "std": 21.367689614339454,
+        "min": 5.0,
+        "max": 93.0,
+        "median": 55.0
+      },
+      "Sliding Tackle": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 85,
+        "is_constant": false,
+        "mean": 45.64444912798356,
+        "std": 20.922087151586155,
+        "min": 4.0,
+        "max": 90.0,
+        "median": 52.0
+      },
+      "Goalkeeping": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 259,
+        "is_constant": false,
+        "mean": 81.43669318720691,
+        "std": 84.66557941450758,
+        "min": 10.0,
+        "max": 440.0,
+        "median": 53.0
+      },
+      "GK Diving": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 69,
+        "is_constant": false,
+        "mean": 16.416302228779177,
+        "std": 17.554194416158662,
+        "min": 2.0,
+        "max": 90.0,
+        "median": 11.0
+      },
+      "GK Handling": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 70,
+        "is_constant": false,
+        "mean": 16.207123662995944,
+        "std": 16.81630495641104,
+        "min": 2.0,
+        "max": 92.0,
+        "median": 11.0
+      },
+      "GK Kicking": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 79,
+        "is_constant": false,
+        "mean": 16.076452921650244,
+        "std": 16.491103038909007,
+        "min": 2.0,
+        "max": 93.0,
+        "median": 11.0
+      },
+      "GK Positioning": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 76,
+        "is_constant": false,
+        "mean": 16.217187417672164,
+        "std": 17.002238905626584,
+        "min": 2.0,
+        "max": 91.0,
+        "median": 11.0
+      },
+      "GK Reflexes": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 70,
+        "is_constant": false,
+        "mean": 16.519626956109384,
+        "std": 17.854078610643356,
+        "min": 2.0,
+        "max": 90.0,
+        "median": 11.0
+      },
+      "Total Stats": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 1420,
+        "is_constant": false,
+        "mean": 1595.28694873281,
+        "std": 269.8747889118783,
+        "min": 747.0,
+        "max": 2316.0,
+        "median": 1627.0
+      },
+      "Base Stats": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 250,
+        "is_constant": false,
+        "mean": 355.70219716528794,
+        "std": 40.761117391830325,
+        "min": 232.0,
+        "max": 498.0,
+        "median": 356.0
+      },
+      "W/F": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5,
+        "is_constant": false
+      },
+      "SM": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5,
+        "is_constant": false
+      },
+      "A/W": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 3,
+        "is_constant": false
+      },
+      "D/W": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 3,
+        "is_constant": false
+      },
+      "IR": {
+        "dtype": "object",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 5,
+        "is_constant": false
+      },
+      "PAC": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 70,
+        "is_constant": false,
+        "mean": 67.45397544654618,
+        "std": 10.677859322488402,
+        "min": 25.0,
+        "max": 96.0,
+        "median": 68.0
+      },
+      "SHO": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 78,
+        "is_constant": false,
+        "mean": 53.45703145581959,
+        "std": 13.827425186110784,
+        "min": 16.0,
+        "max": 93.0,
+        "median": 56.0
+      },
+      "PAS": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 68,
+        "is_constant": false,
+        "mean": 57.681015859634336,
+        "std": 10.08185716647949,
+        "min": 25.0,
+        "max": 93.0,
+        "median": 58.0
+      },
+      "DRI": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 69,
+        "is_constant": false,
+        "mean": 62.875019758680644,
+        "std": 9.927414793830009,
+        "min": 25.0,
+        "max": 95.0,
+        "median": 64.0
+      },
+      "DEF": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 78,
+        "is_constant": false,
+        "mean": 49.86622055956584,
+        "std": 16.44321276940203,
+        "min": 12.0,
+        "max": 91.0,
+        "median": 53.0
+      },
+      "PHY": {
+        "dtype": "int64",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "unique_count": 63,
+        "is_constant": false,
+        "mean": 64.36893408504136,
+        "std": 9.601883146044148,
+        "min": 28.0,
+        "max": 91.0,
+        "median": 65.0
+      },
+      "Hits": {
+        "dtype": "object",
+        "missing_count": 2595,
+        "missing_percentage": 13.673007007745403,
+        "unique_count": 450,
         "is_constant": false
       }
     }
   },
   "missing_analysis": {
     "overall_stats": {
-      "missing_percentage": 9.245852187028659,
-      "complete_rows_percentage": 22.84313725490196
+      "missing_percentage": 1.4069549187310924,
+      "complete_rows_percentage": 4.915959744981295
     },
     "column_analysis": [
       {
-        "column": "EmployeeID",
+        "column": "ID",
         "missing_count": 0,
         "missing_percentage": 0.0,
         "severity": "none",
@@ -183,22 +928,138 @@
         "strategies": []
       },
       {
-        "column": "Age",
-        "missing_count": 151,
-        "missing_percentage": 14.803921568627452,
-        "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
+        "column": "LongName",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
       },
       {
-        "column": "Department",
-        "missing_count": 136,
-        "missing_percentage": 13.333333333333334,
-        "severity": "warning",
+        "column": "photoUrl",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "playerUrl",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Nationality",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Age",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "\u2193OVA",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "POT",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Club",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Contract",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Positions",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Height",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Weight",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Preferred Foot",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "BOV",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Best Position",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Joined",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Loan Date End",
+        "missing_count": 17966,
+        "missing_percentage": 94.6625217345487,
+        "severity": "error",
         "dtype": "object",
         "strategies": [
           "Impute with mode",
@@ -207,15 +1068,31 @@
         ]
       },
       {
-        "column": "Salary",
+        "column": "Value",
         "missing_count": 0,
         "missing_percentage": 0.0,
         "severity": "none",
-        "dtype": "float64",
+        "dtype": "object",
         "strategies": []
       },
       {
-        "column": "YearsAtCompany",
+        "column": "Wage",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Release Clause",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "Attacking",
         "missing_count": 0,
         "missing_percentage": 0.0,
         "severity": "none",
@@ -223,7 +1100,7 @@
         "strategies": []
       },
       {
-        "column": "PerformanceScore",
+        "column": "Crossing",
         "missing_count": 0,
         "missing_percentage": 0.0,
         "severity": "none",
@@ -231,58 +1108,426 @@
         "strategies": []
       },
       {
-        "column": "Satisfaction",
-        "missing_count": 253,
-        "missing_percentage": 24.80392156862745,
+        "column": "Finishing",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Heading Accuracy",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Short Passing",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Volleys",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Skill",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Dribbling",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Curve",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "FK Accuracy",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Long Passing",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Ball Control",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Movement",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Acceleration",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Sprint Speed",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Agility",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Reactions",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Balance",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Power",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Shot Power",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Jumping",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Stamina",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Strength",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Long Shots",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Mentality",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Aggression",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Interceptions",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Positioning",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Vision",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Penalties",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Composure",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Defending",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Marking",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Standing Tackle",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Sliding Tackle",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Goalkeeping",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "GK Diving",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "GK Handling",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "GK Kicking",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "GK Positioning",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "GK Reflexes",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Total Stats",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Base Stats",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "W/F",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "SM",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "A/W",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "D/W",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "IR",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "object",
+        "strategies": []
+      },
+      {
+        "column": "PAC",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "SHO",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "PAS",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "DRI",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "DEF",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "PHY",
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "severity": "none",
+        "dtype": "int64",
+        "strategies": []
+      },
+      {
+        "column": "Hits",
+        "missing_count": 2595,
+        "missing_percentage": 13.673007007745403,
         "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
-      },
-      {
-        "column": "ProjectCount",
-        "missing_count": 74,
-        "missing_percentage": 7.254901960784315,
-        "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
-      },
-      {
-        "column": "RemoteWork",
-        "missing_count": 0,
-        "missing_percentage": 0.0,
-        "severity": "none",
-        "dtype": "object",
-        "strategies": []
-      },
-      {
-        "column": "EmployeeCode",
-        "missing_count": 0,
-        "missing_percentage": 0.0,
-        "severity": "none",
-        "dtype": "object",
-        "strategies": []
-      },
-      {
-        "column": "Company",
-        "missing_count": 0,
-        "missing_percentage": 0.0,
-        "severity": "none",
-        "dtype": "object",
-        "strategies": []
-      },
-      {
-        "column": "ManagerEmail",
-        "missing_count": 612,
-        "missing_percentage": 60.0,
-        "severity": "error",
         "dtype": "object",
         "strategies": [
           "Impute with mode",
@@ -293,22 +1538,10 @@
     ],
     "recommendations": [
       {
-        "column": "Age",
-        "missing_count": 151,
-        "missing_percentage": 14.803921568627452,
-        "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
-      },
-      {
-        "column": "Department",
-        "missing_count": 136,
-        "missing_percentage": 13.333333333333334,
-        "severity": "warning",
+        "column": "Loan Date End",
+        "missing_count": 17966,
+        "missing_percentage": 94.6625217345487,
+        "severity": "error",
         "dtype": "object",
         "strategies": [
           "Impute with mode",
@@ -317,34 +1550,10 @@
         ]
       },
       {
-        "column": "Satisfaction",
-        "missing_count": 253,
-        "missing_percentage": 24.80392156862745,
+        "column": "Hits",
+        "missing_count": 2595,
+        "missing_percentage": 13.673007007745403,
         "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
-      },
-      {
-        "column": "ProjectCount",
-        "missing_count": 74,
-        "missing_percentage": 7.254901960784315,
-        "severity": "warning",
-        "dtype": "float64",
-        "strategies": [
-          "Impute with mean/median",
-          "Fill with constant (0)",
-          "Drop rows if target variable"
-        ]
-      },
-      {
-        "column": "ManagerEmail",
-        "missing_count": 612,
-        "missing_percentage": 60.0,
-        "severity": "error",
         "dtype": "object",
         "strategies": [
           "Impute with mode",
@@ -357,59 +1566,341 @@
   "outlier_detection": {
     "summary": {
       "per_column_summary": {
-        "EmployeeID": {
-          "iqr_outliers": 0,
-          "zscore_outliers": 0,
+        "ID": {
+          "iqr_outliers": 250,
+          "zscore_outliers": 167,
           "isolation_outliers": 0,
-          "severity": "low"
+          "severity": "medium"
         },
         "Age": {
+          "iqr_outliers": 8,
+          "zscore_outliers": 27,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "\u2193OVA": {
+          "iqr_outliers": 156,
+          "zscore_outliers": 48,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "POT": {
+          "iqr_outliers": 153,
+          "zscore_outliers": 55,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "BOV": {
+          "iqr_outliers": 137,
+          "zscore_outliers": 56,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Attacking": {
+          "iqr_outliers": 2016,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Crossing": {
           "iqr_outliers": 0,
           "zscore_outliers": 0,
           "isolation_outliers": 0,
           "severity": "low"
         },
-        "Salary": {
-          "iqr_outliers": 37,
+        "Finishing": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Heading Accuracy": {
+          "iqr_outliers": 1108,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Short Passing": {
+          "iqr_outliers": 1748,
+          "zscore_outliers": 104,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Volleys": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Skill": {
+          "iqr_outliers": 1233,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Dribbling": {
+          "iqr_outliers": 1962,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Curve": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "FK Accuracy": {
+          "iqr_outliers": 3,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Long Passing": {
+          "iqr_outliers": 20,
+          "zscore_outliers": 1,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Ball Control": {
+          "iqr_outliers": 2053,
+          "zscore_outliers": 4,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Movement": {
+          "iqr_outliers": 667,
+          "zscore_outliers": 108,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Acceleration": {
+          "iqr_outliers": 782,
+          "zscore_outliers": 133,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Sprint Speed": {
+          "iqr_outliers": 710,
+          "zscore_outliers": 153,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Agility": {
+          "iqr_outliers": 228,
+          "zscore_outliers": 8,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Reactions": {
+          "iqr_outliers": 181,
+          "zscore_outliers": 79,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Balance": {
+          "iqr_outliers": 269,
+          "zscore_outliers": 32,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Power": {
+          "iqr_outliers": 59,
+          "zscore_outliers": 13,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Shot Power": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Jumping": {
+          "iqr_outliers": 412,
+          "zscore_outliers": 19,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Stamina": {
+          "iqr_outliers": 878,
+          "zscore_outliers": 9,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Strength": {
+          "iqr_outliers": 133,
+          "zscore_outliers": 18,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Long Shots": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Mentality": {
+          "iqr_outliers": 1493,
+          "zscore_outliers": 7,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Aggression": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Interceptions": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Positioning": {
+          "iqr_outliers": 11,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Vision": {
+          "iqr_outliers": 71,
+          "zscore_outliers": 28,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Penalties": {
+          "iqr_outliers": 11,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Composure": {
+          "iqr_outliers": 184,
+          "zscore_outliers": 66,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Defending": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Marking": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Standing Tackle": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Sliding Tackle": {
+          "iqr_outliers": 0,
+          "zscore_outliers": 0,
+          "isolation_outliers": 0,
+          "severity": "low"
+        },
+        "Goalkeeping": {
+          "iqr_outliers": 2181,
+          "zscore_outliers": 657,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "GK Diving": {
+          "iqr_outliers": 2085,
+          "zscore_outliers": 587,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "GK Handling": {
+          "iqr_outliers": 2085,
+          "zscore_outliers": 620,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "GK Kicking": {
+          "iqr_outliers": 2089,
+          "zscore_outliers": 598,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "GK Positioning": {
+          "iqr_outliers": 2086,
+          "zscore_outliers": 628,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "GK Reflexes": {
+          "iqr_outliers": 2085,
+          "zscore_outliers": 600,
+          "isolation_outliers": 0,
+          "severity": "high"
+        },
+        "Total Stats": {
+          "iqr_outliers": 620,
+          "zscore_outliers": 7,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "Base Stats": {
+          "iqr_outliers": 48,
           "zscore_outliers": 16,
           "isolation_outliers": 0,
           "severity": "medium"
         },
-        "YearsAtCompany": {
+        "PAC": {
+          "iqr_outliers": 334,
+          "zscore_outliers": 190,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "SHO": {
           "iqr_outliers": 0,
           "zscore_outliers": 0,
           "isolation_outliers": 0,
           "severity": "low"
         },
-        "PerformanceScore": {
+        "PAS": {
+          "iqr_outliers": 181,
+          "zscore_outliers": 36,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "DRI": {
+          "iqr_outliers": 441,
+          "zscore_outliers": 117,
+          "isolation_outliers": 0,
+          "severity": "medium"
+        },
+        "DEF": {
           "iqr_outliers": 0,
           "zscore_outliers": 0,
           "isolation_outliers": 0,
           "severity": "low"
         },
-        "Satisfaction": {
-          "iqr_outliers": 0,
-          "zscore_outliers": 0,
-          "isolation_outliers": 0,
-          "severity": "low"
-        },
-        "ProjectCount": {
-          "iqr_outliers": 23,
-          "zscore_outliers": 8,
+        "PHY": {
+          "iqr_outliers": 117,
+          "zscore_outliers": 34,
           "isolation_outliers": 0,
           "severity": "medium"
         }
       },
-      "total_ml_outliers": 102
+      "total_ml_outliers": 1898
     }
   },
   "validation": {
     "summary": {
-      "data_quality_score": 92.66214177978884,
+      "data_quality_score": 94.77829220676578,
       "validation_passed": true,
-      "total_issues": 2,
+      "total_issues": 1,
       "severity_breakdown": {
-        "error": 2,
+        "error": 1,
         "warning": 0
       }
     },
@@ -417,17 +1908,9 @@
       {
         "column": "Age",
         "constraint": "min_value",
-        "violations": 16,
-        "percentage": 1.5686274509803921,
+        "violations": 324,
+        "percentage": 1.7071500079034723,
         "expected": ">= 18",
-        "severity": "error"
-      },
-      {
-        "column": "Age",
-        "constraint": "max_value",
-        "violations": 15,
-        "percentage": 1.4705882352941175,
-        "expected": "<= 70",
         "severity": "error"
       }
     ],

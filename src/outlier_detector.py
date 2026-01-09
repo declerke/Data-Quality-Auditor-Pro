@@ -9,12 +9,19 @@ class OutlierDetector:
         self.iqr_multiplier = iqr_multiplier
         self.zscore_threshold = zscore_threshold
         self.isolation_contamination = isolation_contamination
-        self.results = {}
+        self.results = {
+            'summary': {
+                'per_column_summary': {},
+                'total_ml_outliers': 0
+            }
+        }
 
     def detect_all(self) -> dict:
         numeric_df = self.df.select_dtypes(include=[np.number]).dropna(axis=1, how='all')
+        
         if numeric_df.empty:
-            return {'error': 'No numeric data available for outlier detection'}
+            self.results = {'error': 'No numeric data available for outlier detection', 'summary': {'per_column_summary': {}, 'total_ml_outliers': 0}}
+            return self.results
 
         per_column = {}
         for col in numeric_df.columns:
@@ -38,14 +45,16 @@ class OutlierDetector:
                 'severity': 'high' if iqr_outliers > (0.05 * len(self.df)) else 'medium' if iqr_outliers > 0 else 'low'
             }
 
-        valid_numeric_data = numeric_df.loc[:, numeric_df.nunique() > 1]
+        valid_numeric_data = numeric_df.loc[:, numeric_df.nunique() > 1].fillna(numeric_df.median())
         
+        total_iso_outliers = 0
         if not valid_numeric_data.empty:
-            iso = IsolationForest(contamination=self.isolation_contamination, random_state=42)
-            preds = iso.fit_predict(valid_numeric_data)
-            total_iso_outliers = (preds == -1).sum()
-        else:
-            total_iso_outliers = 0
+            try:
+                iso = IsolationForest(contamination=self.isolation_contamination, random_state=42)
+                preds = iso.fit_predict(valid_numeric_data)
+                total_iso_outliers = (preds == -1).sum()
+            except Exception:
+                pass
 
         self.results = {
             'summary': {
@@ -56,9 +65,20 @@ class OutlierDetector:
         return self.results
 
     def print_report(self):
+        print("\n" + "="*70)
+        print("OUTLIER DETECTION REPORT")
+        print("="*70)
+
         if 'error' in self.results:
             print(f"   • {self.results['error']}")
             return
-        summary = self.results['summary']
-        print(f"   • Columns analyzed: {len(summary['per_column_summary'])}")
-        print(f"   • Potential ML-detected outliers: {summary['total_ml_outliers']}")
+            
+        summary = self.results.get('summary', {'per_column_summary': {}, 'total_ml_outliers': 0})
+        per_col = summary.get('per_column_summary', {})
+        
+        if not per_col and summary.get('total_ml_outliers') == 0:
+            print("   • No outliers detected or no suitable numeric data found.")
+            return
+
+        print(f"   • Columns analyzed: {len(per_col)}")
+        print(f"   • Potential ML-detected outliers: {summary.get('total_ml_outliers', 0)}")
