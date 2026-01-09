@@ -81,4 +81,8 @@ class OutlierDetector:
             return
 
         print(f"   • Columns analyzed: {len(per_col)}")
+<<<<<<< HEAD
         print(f"   • Potential ML-detected outliers: {summary.get('total_ml_outliers', 0)}")
+=======
+        print(f"   • Potential ML-detected outliers: {summary.get('total_ml_outliers', 0)}")
+>>>>>>> 723b4964f6a6a8146dff32dd97933668779ef8a5
